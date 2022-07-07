@@ -1,6 +1,11 @@
 <?php
 	include 'config.php';
     include 'index.php';
+    $err_msg_template = "
+        <div class='err-msg'>
+            <p>Invalid credentials!</p>
+        </div>
+    ";
     session_start();
     error_reporting(E_ERROR);
     if (!isset($_GET['username']) || !isset($_GET['password'])) {
@@ -19,12 +24,12 @@
     $username_stmt->execute();
     $found = $username_stmt->get_result();
     if ($found->num_rows == 0) {
-        echo("<div class='err-msg'><p>Invalid credentials!</p></div>");
+        echo($err_msg_template);
         return;
     } 
     $row = $found->fetch_assoc();
     if (!password_verify($password, $row["password"])) {
-        echo("<div class='err-msg'><p>Invalid credentials!</p></div>");
+        echo($err_msg_template);
         return;
     } 
     $_SESSION['username'] = $username;
