@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'IBM Plex';
+    src: url('IBMPlexSans-Regular.ttf') format('truetype');
+}
+.weather-detail
+{
+    border-style: solid;
+    width: 21vh;
+    height: 20%;
+}
+
+.city-state {
+    list-style: none;
+}
+.display {
+    list-style: none;
+    display: inline-flex;
+    margin: 10px;
+}
+.btn-submit {
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(236, 233, 233);
+    width: 10vh;
+    height: 5vh;
+    font-family: 'IBM Plex';
+}
+.btn-submit:hover {
+    color: white;
+}
+.input-form {
+    border-radius: 4px;
+    width: 15%;
+    height: 10%;
+    font-family: 'IBM Plex';
+}
+.input-form-login {
+    border-radius: 4px;
+    width: 50%;
+    height: 15%;
+    font-family: 'IBM Plex';
+}
+.btn-submit-creation {
+    border-radius: 4px;
+    background-color: black;
+    color: rgb(236, 233, 233);
+    width: 15vh;
+    height: 5vh;
+    font-family: 'IBM Plex';
+}
+
+.btn-submit-creation:hover {
+    color: white;
+}
+body {
+    font-family: 'IBM Plex';
+}
+.logo {
+    height: 10vh;
+    width: 10vh;
+}
+.center {
+    background-color: whitesmoke;
+    margin: auto;
+    width: 40%;
+    border: 5px solid black;
+    padding: 10px;
+}
+.err-msg {
+    justify-content: center;
+    display: flex;
+    background-color: red;
+    width: 40%;
+    margin-left: 30%;
+}
+.err-msg > p {
+    color: rgb(232, 229, 229);
+}
+.bg {
+    background-image: url('https://wallpaperaccess.com/full/3265126.jpg');
+}
+.logout-link, .logout-link:focus, .logout-link:active {
+    text-decoration: none;
+    color:rgb(149, 147, 147);
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    top: 0px;
+}
+.logout-link:hover {
+    color: black;
+}
