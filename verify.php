@@ -1,5 +1,5 @@
 <?php
-	include 'config.php';
+    include 'config.php';
     include 'index.php';
     $err_msg_template = "
         <div class='err-msg'>

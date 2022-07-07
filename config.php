@@ -1,6 +1,6 @@
 <?php
-	$servername = "localhost";
-	$username = "root";
+    $servername = "localhost";
+    $username = "root";
     $password = "";
 
     // Create connection
@@ -9,10 +9,10 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     $sql = "USE php_db;";
-    if ($conn->query($sql) == TRUE) {
-    } else {
-        echo ("Error: $conn->error");
-    }
+    if (!$conn->query($sql)) {
+	 echo ("Error: $conn->error");
+	 return;
+    } 
     $user_table = "
         CREATE TABLE IF NOT EXISTS users (
             user_id INT PRIMARY KEY AUTO_INCREMENT,
