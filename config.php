@@ -8,8 +8,10 @@
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
+    $creation = "CREATE DATABASE IF NOT EXISTS php_db;";
+    $conn->query($creation);
     $sql = "USE php_db;";
-    if (!$conn->query($sql)) {
+    if ($conn->query($sql) == FALSE) {
 	 echo ("Error: $conn->error");
 	 return;
     } 
