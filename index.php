@@ -13,7 +13,7 @@
             ob_start();
             session_start();
             if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
-                header('Location: /weather-app/weather-for-cities');
+                header('Location: weather-for-cities');
             }
         ?>
         <img src="./assets/WeatherMan!.png" class="logo">
