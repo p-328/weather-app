@@ -34,4 +34,4 @@
     } 
     $_SESSION['username'] = $username;
     $_SESSION['user_id'] = $row["user_id"];
-    header("Location: /weather-app/weather-for-cities");
+    header("Location: weather-for-cities");
