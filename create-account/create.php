@@ -34,4 +34,4 @@
 	} 
 	$insertion_preparer->bind_param('ss', $username, password_hash($password, PASSWORD_DEFAULT));
 	$insertion_preparer->execute();
-	header('Location: /weather-app');
+	header('Location: /');
