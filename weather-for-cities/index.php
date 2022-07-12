@@ -70,7 +70,7 @@
         echo ($page_template);
         echo ("<a href='logout.php' class='logout-link'>Logout</a><br>");
     } else {
-        header('Location: /weather-app');
+        header('Location: /');
     }
     ?>
 
