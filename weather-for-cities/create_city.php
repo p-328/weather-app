@@ -25,6 +25,6 @@
     }
     $creation_stmt->bind_param("iss", $user_id, $city_name, $country_or_state);
     $creation_stmt->execute();
-    header("Location: /weather-app/weather-for-cities");
+    header("Location: index.php");
     exit();
     
